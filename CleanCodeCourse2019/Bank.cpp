@@ -320,6 +320,16 @@ void Bank::transfer()
 	transfer(iban1, iban2, amount);
 }
 
+vector<Customer> Bank::getCustomers()
+{
+	return customers;
+}
+
+vector<Account*> Bank::getAccounts()
+{
+	return accounts;
+}
+
 void Bank::Copy(const Bank& bank)
 {
 	for (int i = 0; i < (int)bank.accounts.size(); i++)

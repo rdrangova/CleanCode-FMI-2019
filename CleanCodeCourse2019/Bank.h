@@ -38,6 +38,9 @@ public:
 	void depositToAccount();
 	void transfer();
 
+	vector <Customer> getCustomers();
+	vector <Account*> getAccounts();
+
 	virtual void Copy(const Bank& bank);
 private:
 	int CustomerCheck(unsigned long long id);
